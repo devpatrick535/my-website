@@ -1,0 +1,590 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #fff;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    color: #198754;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #198754;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    overflow: hidden;
+}
+
+.image-container > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 550px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.p1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.p2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.p3 {
+    margin: 15px 0;
+}
+
+button {
+    padding: 12px 22px;
+    margin: 8px 8px 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button1 {
+    background: #198754;
+    color: rgb(0, 0, 0);
+}
+
+.button2 {
+    background: rgba(0, 0, 0, 0.135);
+    color: black;
+}
+
+.button1:hover{
+    background-color: #183d2ba5;
+    color: black;
+}
+.button2:hover {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.why-choose {
+    padding: 65px 6%;
+    background: #f7faf8;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 35px;
+}
+
+.subtitle {
+    color: #198754;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.health-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.health-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.health-card:hover {
+    transform: translateY(-5px);
+}
+
+.health-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.health-card h3 {
+    color: #198754;
+    margin-bottom: 10px;
+}
+
+.last-section {
+    padding: 50px 6%;
+    background: #fff;
+}
+
+.last-section .image-container {
+    border-radius: 12px;
+}
+
+.last-section .image-container > img {
+    height: 500px;
+}
+
+.last-image-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.experience-box {
+    max-width: 450px;
+}
+
+.experience-box h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.experience-box a,
+.contact-section a {
+    display: inline-block;
+    background: #198754;
+    color: white;
+    padding: 12px 18px;
+    margin-top: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.workout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.box {
+    background: white;
+    color: #333;
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 8px;
+    min-width: 120px;
+}
+
+.box h3 {
+    color: #198754;
+    font-size: 28px;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f0f7f2;
+}
+
+.contact-section h2 {
+    color: #198754;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #183d2b;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .image-container > img {
+        height: 550px;
+    }
+
+    .image-text {
+        left: 5%;
+        right: 5%;
+        max-width: none;
+    }
+
+    .p2 {
+        font-size: 25px;
+    }
+
+    .health-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .last-image-overlay {
+        flex-direction: column;
+        justify-content: center;
+        overflow-y: auto;
+    }
+
+    .experience-box h2 {
+        font-size: 24px;
+    }
+
+    .last-section .image-container > img {
+        height: 650px;
+    }
+}
+
+@media (max-width: 480px) {
+    .health-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .image-text {
+        padding: 12px;
+    }
+
+    .p2 {
+        font-size: 22px;
+    }
+
+    .workout {
+        justify-content: center;
+    }
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.video-image {
+    width: 50%;
+}
+
+.video-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video-text {
+    width: 50%;
+}
+
+.video-text h2 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.video-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.video-text button {
+    background: #198754;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.health-steps {
+    padding: 60px 8%;
+    background: #f8faf7;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.step-card {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #ddd;
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-8px);
+}
+
+.step-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #80b918;
+    margin: 10px auto;
+}
+
+.step-number {
+    display: block;
+    color: #80b918;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.step-card h3 {
+    color: #263238;
+    margin: 12px 0;
+}
+
+.step-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .steps-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.news {
+    padding: 50px 8%;
+    text-align: center;
+    background: #f8f9f7;
+}
+
+.news h2 {
+    font-size: 30px;
+    color: #263b35;
+}
+
+.news > p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.news-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    width: 30%;
+    min-width: 250px;
+    background: white;
+    text-align: left;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-card small,
+.news-card h3,
+.news-card p {
+    margin: 15px;
+}
+
+.news-card small {
+    color: #999;
+}
+
+.news-card h3 {
+    color: #263b35;
+    font-size: 18px;
+}
+
+.news-card p {
+    color: #777;
+}
+
+.news-card a {
+    display: inline-block;
+    margin: 0 15px 20px;
+    color: #78a65a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .news-card {
+        width: 100%;
+    }
+}
+
+.appointment {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    padding: 60px 8%;
+    background: #f5f9f7;
+}
+
+.appointment-image {
+    flex: 1;
+}
+
+.appointment-image img {
+    width: 100%;
+    height: 80%;
+    min-height: 650px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.appointment-content {
+    flex: 1;
+}
+
+.appointment-content h2 {
+    font-size: 32px;
+    color: #173d32;
+    margin-bottom: 10px;
+}
+
+.appointment-content > p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.appointment form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appointment input,
+.appointment textarea {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.appointment textarea {
+    height: 70px;
+    resize: vertical;
+}
+
+.appointment button {
+    background: #239b70;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.appointment button:hover {
+    background: rgb(100, 100, 237);
+}
+
+.clarification h3{
+    color: #239b70;
+}
+
+.appointment a {
+    color: #239b70;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .appointment {
+        flex-direction: column;
+        padding: 30px 5%;
+    }
+
+    .appointment-image img {
+        min-height: 300px;
+    }
+}
+
+
+
