@@ -17,23 +17,33 @@
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact Us</a>
         </nav>
     </header>
 
     <section id="home" class="image-container">
-        <img src="https://images.pexels.com/photos/2447786/pexels-photo-2447786.jpeg"
-             alt="Healthy lifestyle">
 
-        <div class="image-text">
-            <p class="p1">Inspiring you to live a healthier and happier life...</p>
-            <p class="p2">Hi, I am Patrick Nshimiyimana.</p>
-            <p class="p2">Your Health Advisor.</p>
-            <p class="p3">Welcome to Health Coach, your partner in a healthier and happier life.</p>
-            <button class="button1" onclick="location.href='#about'">Know More</button>
-            <button class="button2" onclick="location.href='#contact'">Contact Us</button>
-        </div>
-    </section>
+    <img id="slideImage"
+         src="https://images.pexels.com/photos/2447786/pexels-photo-2447786.jpeg"
+         alt="Healthy lifestyle">
+
+    <div class="image-text">
+        <p class="p1">Inspiring you to live a healthier and happier life...</p>
+        <p class="p2">Hi, I am Patrick Nshimiyimana.</p>
+        <p class="p2">Your Health Advisor.</p>
+        <p class="p3">Welcome to Health Coach, your partner in a healthier and happier life.</p>
+
+        <button class="button1" onclick="location.href='#about'">Know More</button>
+        <button class="button2" onclick="location.href='#contact'">Contact Us</button>
+
+        <br><br>
+
+        <button onclick="changeSlide(-1)">❮</button>
+        <button onclick="changeSlide(1)">❯</button>
+    </div>
+
+</section>
+
 
     <section class="why-choose" id="about">
         <div class="section-title">
@@ -60,28 +70,10 @@
                 <h3>Support and Motivation</h3>
                 <p>Get the support and motivation you need to stay focused on your goals. Build confidence and maintain a healthy, active lifestyle.</p>
             </div>
-
-
-            <section id="Gallery" class="video">
-    <div class="video-container">
-        <div class="video-image">
-            <i class="fa-solid fa-video"></i>
-            <img src="https://images.pexels.com/photos/38167587/pexels-photo-38167587.jpeg" alt="Gallery image">
-        </div>
-
-        <div class="video-text">
             
-           <h1>transform your health</h1>
-            <p>
-                Discover a healthier lifestyle through proper nutrition,
-                regular physical activity, and professional guidance.
-                Start your journey today and build healthy habits
-                for a better future.
-            </p>
-            <button>Learn More</button>
-            
-        </div>
-    </section>
+
+
+    
     
 <section class="health-steps">
     <div class="steps-container">
@@ -315,7 +307,53 @@
 </section>
 
 
+<footer class="footer">
+    <div class="footer-container">
 
+        <div class="footer-about">
+            <img src="https://st.ourhtmldemo.com/new/health-coach/images/logo-3.png" alt="Logo">
+            <p>Your transformation is our passion. We help you stay healthy through fitness, nutrition and professional support.</p>
+            <a href="#">Purchase Now</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#">News & Tips</a>
+            <a href="#">About Us</a>
+            <a href="#">Healthy Food</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="footer-tags">
+            <h3>Popular Tags</h3>
+            <span>Yoga</span>
+            <span>Fitness</span>
+            <span>Workouts</span>
+            <span>Nutrition</span>
+            <span>Diet</span>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Phone: +250 793501498</p>
+            <p>Email: pnshimiyimana535@gmail.com</p>
+            <p>Address: Kigali, Rwanda</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Health Coach. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+<script src="./index.js"></script>
   
 </body>
 </html>
+
+</div>
+
+    
+          

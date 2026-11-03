@@ -46,6 +46,7 @@ nav a:hover {
     color: #198754;
 }
 
+
 .image-container {
     position: relative;
     width: 100%;
@@ -226,6 +227,7 @@ button {
     min-width: 120px;
 }
 
+
 .box h3 {
     color: #198754;
     font-size: 28px;
@@ -351,6 +353,9 @@ footer {
 .video-text button {
     background: #198754;
     color: white;
+    padding: 12px 25px;
+    border: none;
+   color: white;
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
@@ -584,6 +589,77 @@ footer {
     .appointment-image img {
         min-height: 300px;
     }
+}
+
+.footer {
+    background: #2D380A;
+    color: #aaa;
+    padding: 35px 8% 10px;
+    font-size: 12px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-container > div {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-about img {
+    width: 130px;
+    margin-bottom: 12px;
+}
+
+.footer h3 {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.footer a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.footer a:hover {
+    color: #8bc34a;
+}
+
+.footer-about a {
+    display: inline-block;
+    background: #8bc34a;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 8px;
+}
+
+.footer-tags span {
+    display: inline-block;
+    border: 1px solid #555;
+    padding: 6px 9px;
+    margin: 3px;
+    font-size: 11px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 12px;
+    font-size: 11px;
 }
 
 
