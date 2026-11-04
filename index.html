@@ -13,13 +13,19 @@
     <header>
         <h1>Health Coach</h1>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact Us</a>
-        </nav>
+           <nav class="flex flex-wrap gap-5">
+    <a href="index.html" class="hover:text-green-600">Home</a>
+    <a href="about.html" data-page="about.html" class="hover:text-green-600">About Us</a>
+    <a href="services.html" data-page="services.html" class="hover:text-green-600">Services</a>
+    <a href="gallery.html" data-page="gallery.html" class="hover:text-green-600">Gallery</a>
+    <a href="contact.html" data-page="contact.html" class="hover:text-green-600">Contact Us</a>
+</nav>
+    
     </header>
+
+    <div id="pagePreview" class="hidden w-full bg-white">
+    <iframe id="previewFrame" class="w-full h-[700px] border-0"></iframe>
+</div>
 
     <section id="home" class="image-container">
 
@@ -54,7 +60,7 @@
 
         <div class="health-cards">
             <div class="health-card">
-                <img src="https://images.pexels.com/photos/3987405/pexels-photo-3987405.jpeg" alt="Healthy nutrition">
+                <img src="IMG-20260411-WA0016.jpg" alt="Healthy nutrition">
                 <h3>Nutrition Strategies</h3>
                 <p>Choose nutritious foods to keep your body strong. Eat fruits, vegetables, proteins, and whole grains, drink enough water, and enjoy balanced meals.</p>
             </div>
@@ -197,13 +203,8 @@
         <div class="video-text">
             
            <h1>transform your health</h1>
-            <p>
-                Discover a healthier lifestyle through proper nutrition,
-                regular physical activity, and professional guidance.
-                Start your journey today and build healthy habits
-                for a better future.
-            </p>
-            <button>Learn More</button>
+            <p>We provide a variety of health and fitness services to help you achieve your goals. Our team of experts is dedicated to supporting your journey towards a healthier lifestyle.</p>
+            <a href="#contact">Get Started</a>
             
         </div>
     </section>
